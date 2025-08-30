@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define rep(i, n) for(int i=0; i<(n); i++)
+#define drep(i, n) for(int i=(n)-1; i>=0; i--)
+#define Yes cout << "Yes" << endl
+#define No cout << "No" << endl
+#define nsort(a) sort(a.begin(), a.end())
+#define rsort(a) sort(a.rbegin(), a.rend())
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int a, b;
+    cin >> a >> b;
+    for(int i=1; i<=9; i++) if(i!=a+b) {
+        cout << i << endl;
+        return 0;
+    }
+
+    return 0;
+}

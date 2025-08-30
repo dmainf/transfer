@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define rep(i,n) for(int i=0;i<(n);i++)
+#define all(a) a.begin(),a.end()
+#define rall(a) a.rbegin(),a.rend()
+#define YES cout<<"Yes"<<endl;
+#define NO cout<<"No"<<endl;
+using ll=long long;
+using pi=pair<int,int>;
+const int di[]={+1,-1,+0,+0};
+const int dj[]={+0,+0,+1,-1};
+const int INF=1e9;
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    string s;
+    cin >> s;
+    //407
+    //...
+    //730   7
+    //73    1
+    //40    3
+    //4     1
+    //0     4
+    //      1
+    //      17
+    //0 1 2 3 4 5 6 7 8 9
+    ll cnt=0;
+    ll ans=0;
+    while(!s.empty()) {
+        int tmp=((s.back()-'0')-cnt%10+10)%10;
+        cnt+=tmp;
+        ans+=tmp;
+        s.pop_back();
+        ans++;
+    }
+    cout << ans << endl;
+
+    return 0;
+}
