@@ -1,0 +1,27 @@
+git init			ローカルレポジトリを作成
+git remote add origin <URL>	ローカルとリモートを紐づけ
+	※リモートレポジトリは通常originとニックネームを付ける
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+git add	<file1 file2 .../-A>	ステージングする	(=commitの予約)
+git commit -m "<comment>"	コミットする		(=変更の記録を取る)
+git push origin main		プッシュする
+	※違いが一切ないと更新されない
+	origin	←リモートレポジトリ名
+	main	←ローカルブランチ名
+
+	git push --force origin main
+
+git pull origin main		
+
+
+git status			作業中のブランチを表示
+git remote -v			接続されているリモートレポジトリを表示
+git branch -a			ローカルとリモートのブランチを表示
+	git branch -m <name>		ブランチ名をnameに変える
+	※古いとmasterになってることがあるからmainにしとく
+
+
+
+
+free -h		メモリ使用量を確認
